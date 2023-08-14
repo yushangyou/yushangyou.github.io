@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>大图片处理 | 小鱼儿尚游</title><meta name="author" content="yushangyou"><meta name="copyright" content="yushangyou"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="前端加载超大图片时，一般可以采取以下措施实现加速：123456789    1.图片压缩：将图片进行压缩可以大幅减小图片的大小，从而缩短加载时间。压缩图片时需要注意保持图片质量，以免影响图片显示效果。    2.图片分割：将超大图片分割成多个小图块进行加载，可以避免一次性加载整个图片，从而加快加载速度。这种方式需要在前端实现图片拼接，需要确保拼接后的图片无缝衔接。    3.CDN加速：使用 CD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大图片处理">
+<meta property="og:url" content="http://yushangyou.github.io/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:site_name" content="小鱼儿尚游">
+<meta property="og:description" content="前端加载超大图片时，一般可以采取以下措施实现加速：123456789    1.图片压缩：将图片进行压缩可以大幅减小图片的大小，从而缩短加载时间。压缩图片时需要注意保持图片质量，以免影响图片显示效果。    2.图片分割：将超大图片分割成多个小图块进行加载，可以避免一次性加载整个图片，从而加快加载速度。这种方式需要在前端实现图片拼接，需要确保拼接后的图片无缝衔接。    3.CDN加速：使用 CD">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://file2.renrendoc.com/fileroot_temp3/2021-4/19/5eb911bd-9c7a-4584-bb81-a32545b9e251/5eb911bd-9c7a-4584-bb81-a32545b9e2511.gif">
+<meta property="article:published_time" content="2022-11-27T13:00:47.000Z">
+<meta property="article:modified_time" content="2023-07-03T14:30:00.034Z">
+<meta property="article:author" content="yushangyou">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://file2.renrendoc.com/fileroot_temp3/2021-4/19/5eb911bd-9c7a-4584-bb81-a32545b9e251/5eb911bd-9c7a-4584-bb81-a32545b9e2511.gif"><link rel="shortcut icon" href="https://n.sinaimg.cn/sinakd2021522s/0/w400h400/20210522/eb77-kqpyffy7454986.jpg"><link rel="canonical" href="http://yushangyou.github.io/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '大图片处理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-03 22:30:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202003%2F16%2F20200316193401_eZKLu.thumb.1000_0.jpeg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1687409710&amp;t=d816496b7abcca8f112b74f80b16425c" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/vue/"><i class="fa-fw fas fa-folder-open"></i><span> Vue</span></a></li><li><a class="site-page child" href="/react/"><i class="fa-fw fas fa-folder-open"></i><span> React</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://file2.renrendoc.com/fileroot_temp3/2021-4/19/5eb911bd-9c7a-4584-bb81-a32545b9e251/5eb911bd-9c7a-4584-bb81-a32545b9e2511.gif')"><nav id="nav"><span id="blog-info"><a href="/" title="小鱼儿尚游"></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/vue/"><i class="fa-fw fas fa-folder-open"></i><span> Vue</span></a></li><li><a class="site-page child" href="/react/"><i class="fa-fw fas fa-folder-open"></i><span> React</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">大图片处理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-27T13:00:47.000Z" title="发表于 2022-11-27 21:00:47">2022-11-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-03T14:30:00.034Z" title="更新于 2023-07-03 22:30:00">2023-07-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="大图片处理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="前端加载超大图片时，一般可以采取以下措施实现加速："><a href="#前端加载超大图片时，一般可以采取以下措施实现加速：" class="headerlink" title="前端加载超大图片时，一般可以采取以下措施实现加速："></a>前端加载超大图片时，一般可以采取以下措施实现加速：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    1.图片压缩：将图片进行压缩可以大幅减小图片的大小，从而缩短加载时间。压缩图片时需要注意保持图片质量，以免影响图片显示效果。</span><br><span class="line">    2.图片分割：将超大图片分割成多个小图块进行加载，可以避免一次性加载整个图片，从而加快加载速度。这种方式需要在前端实现图片拼接，需要确保拼接后的图片无缝衔接。</span><br><span class="line">    3.CDN加速：使用 CDN（内容分发网络）可以将图片缓存在离用户更近的节点上，从而加速图片加载速度。如果需要加载的图片是静态资源，可以将其存储在 CDN 上，以便快速访问。</span><br><span class="line">    4.懒加载：懒加载是一种图片延迟加载的方式，即当用户浏览到需要加载的图片时才进行加载，可以有效避免一次性加载大量图片而导致页面加载速度缓慢。</span><br><span class="line">    5.预加载：预加载是在页面加载完毕后，提前加载下一步所需要的资源。在图片加载方面，可以在页面加载完毕后提前加载下一个需要显示的图片，以便用户快速浏览。</span><br><span class="line"></span><br><span class="line">而对于几百M或上G的大图而言，不管对图片进行怎么优化或加速处理，要实现秒开也是不太可能的事情。而上面介绍的第二条“图像分割切片”是最佳解决方案。下面介绍下如何对大图进行分割，在前端进行拼接实现秒开。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="图像切片原理介绍"><a href="#图像切片原理介绍" class="headerlink" title="图像切片原理介绍"></a>图像切片原理介绍</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">图像切片是指将一张大图分割成若干个小图的过程，以便于存储和处理。图像切片常用于网络地图、瓦片地图、图像拼接等应用中。</span><br><span class="line"></span><br><span class="line">  切片原理主要包括以下几个步骤：</span><br><span class="line"></span><br><span class="line">    1.定义切片大小：首先需要定义每个小图的大小，一般情况下是正方形或矩形。</span><br><span class="line">    2.计算切片数量：根据定义的切片大小，计算原始图像需要被切成多少个小图。计算公式为：切片数量 = 原始图像宽度 / 切片宽度 × 原始图像高度 / 切片高度。</span><br><span class="line">    3.切割图像：按照计算出的切片数量，将原始图像分割成相应数量的小图。可以使用图像处理库或自己编写代码实现。</span><br><span class="line">    4.存储切片：将切割后的小图存储到磁盘上，可以使用常见的图片格式，如JPEG、PNG等。</span><br><span class="line">    5.加载切片：在需要显示切片的地方，根据需要加载相应的小图，组合成完整的图像。</span><br><span class="line"></span><br><span class="line">使用图像切片可以降低处理大图像的复杂度，同时也能够提高图像的加载速度，使得用户可以更快地查看图像的细节。图像切片广泛应用于需要处理大图像的场景，能够提高图像处理和显示效率，同时也能够提高用户的体验。</span><br></pre></td></tr></table></figure>
+
+<h3 id="实现（先上传大图，至后台进行切片处理-上传相关代码为：）"><a href="#实现（先上传大图，至后台进行切片处理-上传相关代码为：）" class="headerlink" title="实现（先上传大图，至后台进行切片处理, 上传相关代码为：）"></a>实现（先上传大图，至后台进行切片处理, 上传相关代码为：）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">async onChangeFile(file) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            message.info(<span class="string">&#x27;文件上传中，请稍候...&#x27;</span>)</span><br><span class="line">            this.isSelectFile = <span class="literal">false</span>;</span><br><span class="line">            this.uploadMapResult = await svc.uploadMap(file.raw);</span><br><span class="line">            <span class="keyword">if</span> (this.uploadMapResult.error) &#123;</span><br><span class="line">                message.error(<span class="string">&#x27;上传图形失败!&#x27;</span> + this.uploadMapResult.error)</span><br><span class="line">                <span class="built_in">return</span></span><br><span class="line">            &#125;</span><br><span class="line">            this.form.mapid = this.uploadMapResult.mapid;</span><br><span class="line">            this.form.uploadname = this.uploadMapResult.uploadname;</span><br><span class="line">            this.maptype = this.uploadMapResult.maptype || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">            this.dialogVisible = <span class="literal">true</span>;</span><br><span class="line">        &#125; catch (error) &#123;</span><br><span class="line">            console.error(error);</span><br><span class="line">            message.error(<span class="string">&#x27;上传图形失败!&#x27;</span>, error)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+<pre><code>如果需要上传后对图像进行处理，可以新建一个cmd.txt文件，把处理的命令写进文件中，然后和图像一起打包成zip上传。
+
+如需要把1.jpg,2.jpg拼接成一个新的图片m1.png再打开,cmd.txt的写法如下：
+</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">join</span></span><br><span class="line">1.jpg</span><br><span class="line">2.jpg</span><br><span class="line">m1.png</span><br><span class="line">horizontal</span><br></pre></td></tr></table></figure>
+<pre><code>再把1.jpg,2.jpg,cmd.txt三个文件打包成zip文件上传即可
+</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">async <span class="function"><span class="title">onOpenMap</span></span>() &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            <span class="built_in">let</span> mapid = this.form.mapid;</span><br><span class="line">            <span class="built_in">let</span> param = &#123;</span><br><span class="line">                ...this.uploadMapResult,</span><br><span class="line">                // 图名称</span><br><span class="line">                mapid: this.form.mapid,</span><br><span class="line">                // 上传完返回的fileid</span><br><span class="line">                fileid: this.uploadMapResult.fileid,</span><br><span class="line">                // 上传完返回的文件名</span><br><span class="line">                uploadname: this.form.uploadname,</span><br><span class="line">                // 地图打开方式</span><br><span class="line">                mapopenway: this.form.openway === <span class="string">&quot;直接打开图形&quot;</span> ? vjmap.MapOpenWay.Memory : vjmap.MapOpenWay.GeomRender,</span><br><span class="line">                // 如果要密码访问的话，设置秘钥值</span><br><span class="line">                secretKey: this.form.isPasswordProtection ? svc.pwdToSecretKey(this.form.password) : undefined,</span><br><span class="line">                style: vjmap.openMapDarkStyle(),// div为深色背景颜色时，这里也传深色背景样式</span><br><span class="line">                // 图像类型设置地图左上角坐标和分辨率</span><br><span class="line">                imageLeft: this.form.imageLeft ? +this.form.imageLeft : undefined,</span><br><span class="line">                imageTop: this.form.imageTop ? +this.form.imageTop : undefined,</span><br><span class="line">                imageResolution: this.form.imageResolution ? +this.form.imageResolution : undefined,</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">let</span> isVectorStyle = this.form.openway === <span class="string">&quot;存储后渲染矢量&quot;</span>;</span><br><span class="line">            await openMap(param, isVectorStyle);</span><br><span class="line">        &#125; catch (error) &#123;</span><br><span class="line">            console.error(error);</span><br><span class="line">            message.error(<span class="string">&#x27;打开图形失败!&#x27;</span>, error)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://yushangyou.github.io">yushangyou</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yushangyou.github.io/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">http://yushangyou.github.io/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yushangyou.github.io" target="_blank">小鱼儿尚游</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://file2.renrendoc.com/fileroot_temp3/2021-4/19/5eb911bd-9c7a-4584-bb81-a32545b9e251/5eb911bd-9c7a-4584-bb81-a32545b9e2511.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/01/reduce%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="10个超级实用的reduce使用技巧"><img class="cover" src="https://www.pianshen.com/images/924/a09b6a983ef7ce70dc7a83ba742362ec.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">10个超级实用的reduce使用技巧</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/25/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/" title="前端npm和yarn更换国内淘宝镜像"><img class="cover" src="https://img0.baidu.com/it/u=4078340691,2196726931&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=1115&amp;h=500" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">前端npm和yarn更换国内淘宝镜像</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202003%2F16%2F20200316193401_eZKLu.thumb.1000_0.jpeg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1687409710&amp;t=d816496b7abcca8f112b74f80b16425c" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">yushangyou</div><div class="author-info__description">个人博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yushangyou.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yushangyou.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yushangyou2020@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%8A%A0%E8%BD%BD%E8%B6%85%E5%A4%A7%E5%9B%BE%E7%89%87%E6%97%B6%EF%BC%8C%E4%B8%80%E8%88%AC%E5%8F%AF%E4%BB%A5%E9%87%87%E5%8F%96%E4%BB%A5%E4%B8%8B%E6%8E%AA%E6%96%BD%E5%AE%9E%E7%8E%B0%E5%8A%A0%E9%80%9F%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">前端加载超大图片时，一般可以采取以下措施实现加速：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E5%88%87%E7%89%87%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">图像切片原理介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%85%88%E4%B8%8A%E4%BC%A0%E5%A4%A7%E5%9B%BE%EF%BC%8C%E8%87%B3%E5%90%8E%E5%8F%B0%E8%BF%9B%E8%A1%8C%E5%88%87%E7%89%87%E5%A4%84%E7%90%86-%E4%B8%8A%E4%BC%A0%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81%E4%B8%BA%EF%BC%9A%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">实现（先上传大图，至后台进行切片处理, 上传相关代码为：）</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/11/mockjs/" title="Mock.js使用"><img src="https://i.postimg.cc/T1kW3wXw/mockjs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Mock.js使用"/></a><div class="content"><a class="title" href="/2023/02/11/mockjs/" title="Mock.js使用">Mock.js使用</a><time datetime="2023-02-11T13:00:00.000Z" title="发表于 2023-02-11 21:00:00">2023-02-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/" title="移动端适配"><img src="https://img.zcool.cn/community/01b38a5b93cd2ba8012017eeb5d104.jpg@1280w_1l_2o_100sh.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动端适配"/></a><div class="content"><a class="title" href="/2023/01/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/" title="移动端适配">移动端适配</a><time datetime="2023-01-19T12:18:00.000Z" title="发表于 2023-01-19 20:18:00">2023-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/01/reduce%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="10个超级实用的reduce使用技巧"><img src="https://www.pianshen.com/images/924/a09b6a983ef7ce70dc7a83ba742362ec.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="10个超级实用的reduce使用技巧"/></a><div class="content"><a class="title" href="/2022/12/01/reduce%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="10个超级实用的reduce使用技巧">10个超级实用的reduce使用技巧</a><time datetime="2022-12-01T12:18:47.000Z" title="发表于 2022-12-01 20:18:47">2022-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="大图片处理"><img src="https://file2.renrendoc.com/fileroot_temp3/2021-4/19/5eb911bd-9c7a-4584-bb81-a32545b9e251/5eb911bd-9c7a-4584-bb81-a32545b9e2511.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="大图片处理"/></a><div class="content"><a class="title" href="/2022/11/27/%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87(100M%E4%BB%A5%E4%B8%8A)%E5%AE%9E%E7%8E%B0%E7%A7%92%E5%BC%80%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="大图片处理">大图片处理</a><time datetime="2022-11-27T13:00:47.000Z" title="发表于 2022-11-27 21:00:47">2022-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/25/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/" title="前端npm和yarn更换国内淘宝镜像"><img src="https://img0.baidu.com/it/u=4078340691,2196726931&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=1115&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端npm和yarn更换国内淘宝镜像"/></a><div class="content"><a class="title" href="/2022/11/25/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/" title="前端npm和yarn更换国内淘宝镜像">前端npm和yarn更换国内淘宝镜像</a><time datetime="2022-11-25T13:18:47.000Z" title="发表于 2022-11-25 21:18:47">2022-11-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By yushangyou</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">所有内容皆为余尚游个人分享,如有雷同-纯属巧合,最终解释权归余尚游所有</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="419185735" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
